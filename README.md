@@ -32,3 +32,19 @@ There maybe some HomeAssistant automation that I might look into along with it. 
 
 ## Task Breadown
 - [ ] 
+
+
+## Developing Guidelines
+Build docker image from the home directory:
+```
+docker build --tag huskarl .
+```
+Run the container:
+```
+docker run -d --name container_name -p host_port:container_port image
+```
+
+Check container logs by:
+```
+docker container logs [OPTION] <container>
+```
